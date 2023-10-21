@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+
+}
+
+.employees {
+  background-color: greenyellow;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+ul{
+    background-color: aliceblue;
+    height: 25vh;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+ul li {
+    margin: 5px 20px;
+}

@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(25, 209, 25);
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.underForm {
+  background-color: white;
+  color: rgb(14, 233, 24);
+  font-weight: bold;
+  padding: 20px 0px;
+  border-radius: 5px;
+  box-shadow: 2px 4px #6d6666;
+  border: none;
+  text-align: center;
+  width: 30%;
+  margin: 25px 0px;
+  font-size: 20px;
+}
+input,
+textarea {
+  box-shadow: 2px 4px #6d6666;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0px;
+}
+
+button {
+  width: 20%;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  background-color: #2edf2e;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
