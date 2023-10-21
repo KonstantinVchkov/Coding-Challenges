@@ -1,0 +1,180 @@
+body {
+  background-color: #e7e7e7;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+ul,
+li,
+a {
+  padding-top: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+.logo img {
+  width: 120px;
+}
+
+.w-90 {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cards-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fixedNav {
+  width: 10%;
+}
+
+.filteredCards {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fixedNav ul,
+.nav-links ul {
+  padding: 0;
+}
+
+.nav-links ul {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.nav-links ul li, .fixedNav li {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  margin-top: 10px;
+}
+.fixedNav li,
+.events ul li {
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 18px;
+  position: relative;
+}
+.counter {
+	position: absolute;
+    left: 100%;
+}
+.nav-links ul li:hover {
+  background-color: #5c5c5c;
+  color: orange;
+}
+.fixedNav li:hover {
+  color: orange;
+}
+
+.events {
+  padding: 10px 0px;
+  border-right: 1px solid grey;
+}
+.events ul li:hover {
+  color: orange;
+}
+.nav-links ul li:not(:last-child),
+.navIcons i {
+  margin-right: 15px;
+}
+
+.brandS {
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+.line {
+  background-color: #d3d3d3;
+  height: 0.1vh;
+  margin: 20px auto;
+}
+
+.card {
+  flex-basis: 26.666666666%;
+  border: 1px solid grey;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.card:hover {
+  transform: scale(1.1);
+  border: 1px solid orange;
+}
+.card .card-body {
+  background-color: orange;
+  width: 100%;
+  height: 100%;
+}
+
+.card img {
+  width: 350px;
+}
+
+.card-body .card-title {
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.footer-section {
+  display: flex;
+  justify-content: center;
+  background-color: #d3d3d3;
+  position: relative;
+}
+
+.event-section {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.events {
+  flex-basis: 25%;
+  padding: 15px;
+}
+.icons i {
+  color: #f5b400;
+  font-size: 25px;
+  padding: 5px;
+  cursor: pointer;
+}
+.icons i:hover {
+  background-color: #5c5c5c;
+}
+.navIcons i {
+	font-size: 25px;
+	cursor: pointer;
+}
+.navIcons i:hover {
+	color: #f5b400;
+}
+
+.navIcons i {
+  color: #45474a;
+  margin-left: 5px;
+}

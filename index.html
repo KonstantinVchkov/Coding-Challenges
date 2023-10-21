@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bikes</title>
+    <meta name="keywords" content="html,css,javaScript" />
+    <meta name="description" content="Bikes" />
+    <meta name="author" content="" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <!-- Latest compiled and minified BOOTSTRAP CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <!-- Font-awesome 5 cdn -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- start here -->
+    <div class="w-90">
+      <div class="navBar">
+        <div class="logo"><img src="./img/logo.png" alt="" /></div>
+        <div class="nav-links">
+          <ul>
+            <li>Home</li>
+            <li>Bikes</li>
+            <li>gear</li>
+            <li>parts</li>
+            <li>tires</li>
+            <li>service-info</li>
+            <li>catalogues</li>
+            <li>contact</li>
+          </ul>
+        </div>
+        <div class="navIcons">
+          <i class="fa fa-search"></i>
+          <i class="fas fa-shopping-bag"></i>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="text">
+        <h1>Bikes</h1>
+      </div>
+      <div class="line"></div>
+      <div class="cards-section">
+        <div class="fixedNav">
+          <h3>Filter by:</h3>
+          <li id="showAll">
+            Show all <span data-category="showAll" class="counter"></span>
+          </li>
+          <div class="line w-15"></div>
+          <ul>
+            <h3>Gender</h3>
+            <li id="male">
+              Male <span data-category="male" class="counter"></span>
+            </li>
+            <li id="female">
+              Female <span data-category="female" class="counter"></span>
+            </li>
+          </ul>
+          <div class="line w-15"></div>
+          <ul class="brandS">
+            <h3>Brand</h3>
+            <li id="leGrandBikes">
+              le grand bikes
+              <span data-category="legrandbikes" class="counter"></span>
+            </li>
+            <li id="kross">
+              kross <span data-category="kross" class="counter"></span>
+            </li>
+            <li id="explorer">
+              Explorer <span data-category="explorer" class="counter"></span>
+            </li>
+            <li id="visitor">
+              Visitor <span data-category="visitor" class="counter"></span>
+            </li>
+            <li id="pony">
+              pony <span data-category="pony" class="counter"></span>
+            </li>
+            <li id="force">
+              force <span data-category="force" class="counter"></span>
+            </li>
+            <li id="e-bikes">
+              e-bikes <span data-category="e-bikes" class="counter"></span>
+            </li>
+            <li id="ideal">
+              ideal <span data-category="ideal" class="counter"></span>
+            </li>
+          </ul>
+        </div>
+        <div class="filteredCards"></div>
+      </div>
+    </div>
+    <div class="footer-section">
+      <div class="events icons">
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+      <div class="events">
+        <ul>
+          <h3>Event info</h3>
+
+          <li>Lorem, ipsum dolor.</li>
+          <li>Lorem, ipsum dolor.</li>
+          <li>Lorem, ipsum dolor.</li>
+          <li>Lorem, ipsum dolor.</li>
+          <li>Lorem, ipsum dolor.</li>
+          <li>Lorem, ipsum dolor.</li>
+          <li>Lorem, ipsum dolor.</li>
+          <li>Lorem, ipsum dolor.</li>
+        </ul>
+      </div>
+      <div class="events">
+        <ul>
+          <h3>Registration</h3>
+          <li>Lorem, ipsum dolor.</li>
+          <li>Lorem, ipsum dolor.</li>
+          <li>Lorem, ipsum dolor.</li>
+          <li>Lorem, ipsum dolor.</li>
+          <li>Lorem, ipsum dolor.</li>
+          <li>Lorem, ipsum dolor.</li>
+          <li>Lorem, ipsum dolor.</li>
+          <li>Lorem, ipsum dolor.</li>
+        </ul>
+      </div>
+      <div class="events">
+        <ul>
+          <h3>Schedule</h3>
+          <li>Lorem, ipsum dolor.</li>
+          <li>Lorem, ipsum dolor.</li>
+          <li>Lorem, ipsum dolor.</li>
+          <li>Lorem, ipsum dolor.</li>
+          <li>Lorem, ipsum dolor.</li>
+          <li>Lorem, ipsum dolor.</li>
+          <li>Lorem, ipsum dolor.</li>
+          <li>Lorem, ipsum dolor.</li>
+        </ul>
+      </div>
+    </div>
+    <!-- jQuery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
