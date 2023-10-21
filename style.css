@@ -1,0 +1,171 @@
+#race {
+  /* text-align: center; */
+  background-color: #242021;
+}
+.head-section {
+  text-align: center;
+}
+h1,
+h2,
+h3 {
+  color: #a2a2a2;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h1 {
+  font-size: 50px;
+}
+.car img {
+  height: 230px;
+  position: relative;
+
+}
+.green-line {
+  background-color: green;
+  padding: 7px 0px;
+}
+.countDown {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: white;
+  display: none;
+}
+td {
+  border: 1px solid white;
+  padding: 10px;
+}
+table {
+  font-size: 20px;
+  color: rgb(143, 140, 140);
+  margin: 10px;
+}
+.firstSpan {
+  color: white;
+}
+
+.secondSpan {
+  color: red;
+}
+
+table th {
+  padding-left: 10px;
+}
+.first-table,
+.second-table,
+.third-table {
+  width: 33.33333%;
+}
+.first {
+  margin-top: 10px;
+}
+.last {
+  margin-bottom: 10px;
+}
+.white-line {
+  background-color: rgb(255, 255, 255);
+  padding: 7px 0px;
+}
+.yellow-line {
+  background-color: yellow;
+  padding: 7px 0px;
+}
+.mtop {
+  margin-top: 10px;
+}
+
+button {
+  padding: 5px 35px;
+  background-color: inherit;
+  color: white;
+  border: 1px solid white;
+  border-radius: 3px;
+}
+button:hover {
+  background-color: white;
+  color: black;
+}
+.race-btn {
+  margin-right: 10px;
+}
+
+.finishFlag {
+  position: relative;
+  display: none;
+}
+.finishFlag img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 200px;
+  background-color: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.tables {
+  display: flex;
+  text-align: center;
+}
+.tables th {
+  width: 80%;
+}
+
+.car-one-two {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.red {
+  color: red;
+  padding-left: 50px;
+}
+/* Responsive for mobiles */
+@media screen and (max-width: 600px) {
+  .car img {
+    height: 150px;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 15px;
+  }
+}
+/* Responsive for Tablets  */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .car img {
+    height: 200px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 15px;
+  }
+}
+
+/*use these below*/
+/*car1 color*/
+/*color: #ffebf7;*/
+
+/*car2 color*/
+/*color: #ba0000;*/
