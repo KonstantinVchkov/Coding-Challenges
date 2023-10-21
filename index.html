@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge 10 Javascript</title>
+  </head>
+  <body>
+    <!-- 
+        For this challenge, you will solve a task where you will need to prompt for a
+        name. Pass the name to a function that will find the given name from the
+        given array. Use the found array element to print out the name in the DOM,
+        the voting status, and the given grade. If they didn’t vote, don’t print the last
+        row. The arrays are as follows:
+        [[“Antonio”, true, 5], [“Marija”, false], [“Darko”, true, 3]]…
+     -->
+    <script>
+      const voters = [
+        ["Antonio", true, 5],
+        ["Marija", false],
+        ["Darko", true, 3],
+        ["Ljudmil", true, 4],
+        ["Petranka", false],
+        ["Stefan", true, 2],
+      ];
+
+      function voting(prom) {
+        for (let i = 0; i < voters.length; i++) {
+          if (voters[i][0] === prom) {
+            return voters[i];
+          }
+        }
+        return false;
+      }
+      const prom = prompt("enter a name here");
+      const result = voting(prom);
+      let imeNaPromenliva;
+      const table = document.createElement("table");
+      table.style.cssText = "margin-left: auto; margin-right: auto";
+      table.style.border = "1px solid black";
+      table.style.borderCollapse = "collapse";
+      table.style.width = "50%";
+
+      if (result) {
+        const tr = document.createElement("tr");
+        tr.style.border = "1px solid black";
+
+        for (let i = 0; i < result.length; i++) {
+          const td = document.createElement("td");
+          td.style.borderCollapse = "collapse";
+          td.style.border = "1px solid black";
+          td.style.padding = "15px 15px";
+          td.textContent = result[i];
+          if (td.textContent === "true") {
+            td.textContent = "Voted!";
+          } else if (td.textContent === "false") {
+            td.textContent = "Didn't vote";
+          }
+
+          tr.appendChild(td);
+        }
+
+        table.appendChild(tr);
+      } else {
+        console.log("Name not found");
+      }
+
+      document.body.appendChild(table);
+    </script>
+  </body>
+</html>
