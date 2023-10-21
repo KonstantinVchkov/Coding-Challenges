@@ -1,0 +1,23 @@
+.Navbar {
+    position: relative;
+}
+
+.Navbar img {
+    width: 100%;
+}
+
+.Navbar h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-transform: uppercase;
+    color: aliceblue;
+    font-size: 30px;
+}
+
+.border {
+    background-color: aqua;
+    margin-top: 0px;
+    padding: 10px 0px;
+}

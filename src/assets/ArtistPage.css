@@ -1,0 +1,27 @@
+.ArtistDetail-Item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ArtistDetail-Item img {
+    width: 200px;
+    margin-top: 5px;
+}
+.ArtistDetail-Item span {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.Albums {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.Albums .Album {
+    margin: 5px;
+}
+
