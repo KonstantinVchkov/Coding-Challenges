@@ -1,0 +1,15 @@
+.footer-section {
+  display: flex;
+  justify-content: center;
+  background-color: #d3d3d3;
+  position: relative;
+}
+.events {
+  padding: 10px 0px;
+  border-right: 1px solid grey;
+  flex-basis: 25%;
+  padding: 15px;
+}
+.events ul li:hover {
+  color: orange;
+}

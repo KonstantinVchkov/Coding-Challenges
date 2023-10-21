@@ -1,0 +1,31 @@
+.fixedNav {
+  width: 10%;
+  text-align: left;
+}
+.fixedNav li:hover {
+  color: orange;
+}
+.counter {
+  position: absolute;
+  left: 100%;
+  background-color: rgb(182, 181, 181);
+  color: #282c34;
+  font-weight: bolder;
+  border-radius: 50%;
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 10px;
+}
+.line {
+  background-color: #d3d3d3;
+  height: 0.1vh;
+  margin: 20px auto;
+}
+.brandS {
+  text-transform: uppercase;
+  margin-top: 15px;
+  text-align: left;
+  font-weight: normal;
+}

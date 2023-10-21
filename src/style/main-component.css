@@ -1,0 +1,57 @@
+/* Global Settings */
+h1,
+h2,
+h3,
+h4,
+ul,
+li,
+a {
+  padding-top: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+.w-90 {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.fixedNav ul,
+.header-links ul {
+  padding: 0;
+}
+
+.header-links ul li,
+.fixedNav li {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: lighter;
+  padding: 10px;
+  margin-top: 10px;
+  text-align: left;
+}
+.fixedNav li,
+.events ul li {
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 15px;
+  position: relative;
+}
+
+.event-section {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.icons i {
+  color: #f5b400;
+  font-size: 25px;
+  padding: 5px;
+  cursor: pointer;
+}
+.icons i:hover {
+  background-color: #5c5c5c;
+}
+
+/* Global Settings */

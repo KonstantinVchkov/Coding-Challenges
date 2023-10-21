@@ -1,0 +1,34 @@
+.logo img {
+  width: 120px;
+}
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-links ul {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+.header-links ul li:not(:last-child),
+.headerIcons .icon {
+  margin-right: 15px;
+}
+.header-links ul li:hover {
+  background-color: #5c5c5c;
+  color: orange;
+}
+.headerIcons .icon {
+  font-size: 25px;
+  cursor: pointer;
+}
+.headerIcons .icon:hover {
+  color: #f5b400;
+}
+
+.headerIcons .icon {
+  color: #45474a;
+  margin-left: 5px;
+}
