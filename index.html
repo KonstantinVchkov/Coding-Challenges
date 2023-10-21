@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .progress-bar {
+      background-color: green;
+      color: white;
+    }
+    .gray-bg {
+      background-color: rgb(201, 198, 198);
+    }
+    .section-three {
+      margin-top: 10px;
+    }
+  </style>
+  <body>
+    <div class="section-one">
+      <ul class="books-authors"></ul>
+      <ul class="read-not-read"></ul>
+    </div>
+    <div class="section-two">
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Max pages</th>
+            <th>On page</th>
+            <th>Progress</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+    <div class="section-three">
+      <form id="add-book-form">
+        <label for="title">Title:</label>
+        <input
+          type="text"
+          id="title"
+          class="new-book-input"
+          placeholder="Title book"
+          data-property="title"
+          required
+        />
+
+        <label for="author">Author:</label>
+        <input
+          type="text"
+          id="author"
+          class="new-book-input"
+          placeholder="Author Book"
+          data-property="author"
+          required
+        />
+
+        <label for="page-on">Page On:</label>
+        <input
+          type="number"
+          id="page-on"
+          class="new-book-input"
+          placeholder="Page on"
+          data-property="onPage"
+          required
+        />
+
+        <label for="max-pages">Max Pages:</label>
+        <input
+          type="number"
+          id="max-pages"
+          class="new-book-input"
+          placeholder="Max pages"
+          data-property="maxPages"
+          required
+        />
+
+        <button type="submit">Add Book</button>
+      </form>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
