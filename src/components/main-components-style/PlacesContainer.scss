@@ -1,0 +1,32 @@
+@use "../../css/abstracts/mixins" as mix;
+@use "../../css/abstracts/variables" as var;
+@use "sass:math";
+
+.PlaceContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  .card {
+    flex-basis: 33.333%;
+    position: relative;
+    .text-card {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: var.$text-color-primary;
+      text-align: center;
+    }
+    img{
+      width: 100%;
+    }
+    @media screen and (max-width: 768px) {
+    flex-basis: 50%;
+    }
+    @media screen and (max-width: 650px) {
+    flex-basis: 100%;
+    }
+  }
+}

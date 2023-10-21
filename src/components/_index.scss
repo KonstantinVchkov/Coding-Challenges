@@ -1,0 +1,10 @@
+// forward the components scss files
+// @forward "../css/main.scss"
+@use "./main-components-style/Banner.scss";
+@use "./main-components-style/DetailsBlock.scss";
+@use "./main-components-style/PlacesContainer.scss";
+@use "./main-components-style/Footer.scss"
+
+
+
+

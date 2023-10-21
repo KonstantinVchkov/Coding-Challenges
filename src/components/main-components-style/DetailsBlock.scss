@@ -1,0 +1,41 @@
+@use "../../css/abstracts/mixins" as mix;
+@use "../../css/abstracts/variables" as var;
+@use "sass:math";
+
+
+
+.DetailsBlock {
+  width: 100%;
+  .wrap-80{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @extend %wrap;
+    .Right-side{
+      display: flex;
+      justify-content: center;
+    }
+    .Left-Side, .Right-side{
+      @extend %section;     
+      img {
+        border-radius: 50%;
+        max-width: 393px;
+        height: 400px;
+        @media screen and (max-width: 650px) {
+          max-width: 316px;
+          height: 320px;
+      }
+      }
+     
+    }
+    .about{
+      color: var.$text-color-secondary;
+    }
+    .mainTitle{
+      font-size: var.$heading-size-big;
+    }
+    @media screen and (max-width: 650px) {
+        flex-direction: column;
+    }
+  }
+}
